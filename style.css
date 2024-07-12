@@ -1,22 +1,25 @@
-.container {
+:root {
+    --size: 16;
+}
+
+.center {
+    text-align: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: baseline;
-    width: 80%;
-    max-width: 800px;
+    max-width: 100%;
+    width: 800px;
     height: 800px;
 }
 
 .square {
-    position: relative;
-    width: 50px;
-    height: 50px;
+    box-sizing: border-box;
+    border: solid 1px;
     background-color: aqua;
-    flex: 1 1 50px;
-    min-width: 25px;
-    max-width: 100px;
+    flex: 0 0 calc(100% / var(--size));
 }
