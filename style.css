@@ -1,5 +1,14 @@
 :root {
-    --size: 16;
+    --size: ;
+    background-color: #FFD8BE;
+}
+
+.main {
+    display: flex
+}
+
+.inline {
+    display: inline;
 }
 
 h1 {text-align: center;}
@@ -17,7 +26,8 @@ h1 {text-align: center;}
     max-width: 100%;
     width: 600px;
     height: 600px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px lightblue;
 }
 
 .square {
@@ -25,4 +35,9 @@ h1 {text-align: center;}
     border: solid 1px;
     background-color: white;
     flex: 0 0 calc(100% / var(--size));
+}
+
+.rainbow {
+    width: 30px;
+    height: 30px;
 }
