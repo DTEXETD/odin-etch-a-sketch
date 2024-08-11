@@ -23,7 +23,8 @@ function checkRainbowChecked(square, color) {
 // Paint only when the mouse is down
 
 function checkMouseDown(square, color) {
-    square.addEventListener("mousedown", () => {
+    square.addEventListener("mousedown", (e) => {
+        e.preventDefault()
         mouseDown = true
         checkRainbowChecked(square, color)
     })
